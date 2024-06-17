@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgvysubr1iits"]
+
+[ext_resource type="PackedScene" uid="uid://c53xcr5vgxqqu" path="res://Player/player.tscn" id="1_obrr3"]
+[ext_resource type="PackedScene" uid="uid://dvddk0fhs3q7r" path="res://enemies/pawn.tscn" id="2_e6nb2"]
+
+[node name="TestBattle" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_obrr3")]
+position = Vector2(147, 70)
+speed = null
+sword_damage = null
+
+[node name="Pawn" parent="." instance=ExtResource("2_e6nb2")]
+position = Vector2(529, 551)
+
+[node name="Pawn2" parent="." instance=ExtResource("2_e6nb2")]
+position = Vector2(1179, 285)
+
+[node name="Pawn3" parent="." instance=ExtResource("2_e6nb2")]
+position = Vector2(530, -53)

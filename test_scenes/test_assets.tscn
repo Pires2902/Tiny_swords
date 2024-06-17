@@ -1,0 +1,200 @@
+[gd_scene load_steps=25 format=3 uid="uid://xvyccncrt6i2"]
+
+[ext_resource type="Texture2D" uid="uid://drt8iib1nia54" path="res://addons/Tiny Swords/Factions/Goblins/Troops/Barrel/Blue/Barrel_Blue.png" id="1_2bbho"]
+[ext_resource type="Texture2D" uid="uid://cxkxn2he63xrx" path="res://addons/Tiny Swords/Factions/Goblins/Troops/Barrel/Purple/Barrel_Purple.png" id="2_q04le"]
+[ext_resource type="Texture2D" uid="uid://c2a8fu4gj1qff" path="res://addons/Tiny Swords/Factions/Goblins/Troops/Barrel/Red/Barrel_Red.png" id="3_spa7k"]
+[ext_resource type="Texture2D" uid="uid://dw4ia5l7oci7l" path="res://addons/Tiny Swords/Factions/Goblins/Troops/Barrel/Yellow/Barrel_Yellow.png" id="4_w73ee"]
+[ext_resource type="Texture2D" uid="uid://bqhyf8db2kaij" path="res://addons/Tiny Swords/Effects/Explosion/Explosions.png" id="5_j2vxq"]
+[ext_resource type="Texture2D" uid="uid://b5ehmnhgum24g" path="res://addons/Tiny Swords/Effects/Fire/Fire.png" id="6_vqo3e"]
+[ext_resource type="Texture2D" uid="uid://cd7sb84561wbv" path="res://addons/Tiny Swords/Factions/Goblins/Buildings/Wood_House/Goblin_House.png" id="7_p023i"]
+[ext_resource type="Texture2D" uid="uid://bdhcch1wkobbd" path="res://addons/Tiny Swords/Factions/Goblins/Buildings/Wood_House/Goblin_House_Destroyed.png" id="8_ia4e8"]
+[ext_resource type="Texture2D" uid="uid://bmgk8e7crpkwu" path="res://addons/Tiny Swords/Factions/Goblins/Buildings/Wood_Tower/Wood_Tower_Blue.png" id="9_ruxmg"]
+[ext_resource type="Texture2D" uid="uid://dixhtnxxtnk0r" path="res://addons/Tiny Swords/Factions/Goblins/Buildings/Wood_Tower/Wood_Tower_Destroyed.png" id="10_euxdi"]
+[ext_resource type="Texture2D" uid="uid://b3m8lfnnfw61k" path="res://addons/Tiny Swords/Factions/Goblins/Buildings/Wood_Tower/Wood_Tower_InConstruction.png" id="11_a00fk"]
+[ext_resource type="Texture2D" uid="uid://dy100wyngvw5x" path="res://addons/Tiny Swords/Factions/Goblins/Buildings/Wood_Tower/Wood_Tower_Purple.png" id="12_bo7hl"]
+[ext_resource type="Texture2D" uid="uid://bfcut3xf3f1kr" path="res://addons/Tiny Swords/Factions/Goblins/Buildings/Wood_Tower/Wood_Tower_Red.png" id="13_8qk2p"]
+[ext_resource type="Texture2D" uid="uid://dssbof7m5xvr6" path="res://addons/Tiny Swords/Factions/Goblins/Buildings/Wood_Tower/Wood_Tower_Yellow.png" id="14_osq0c"]
+[ext_resource type="Texture2D" uid="uid://dm5dfu6wr45q5" path="res://addons/Tiny Swords/Factions/Goblins/Troops/TNT/Blue/TNT_Blue.png" id="15_541j2"]
+[ext_resource type="Texture2D" uid="uid://hlidn3duniwc" path="res://addons/Tiny Swords/Factions/Goblins/Troops/TNT/Purple/TNT_Purple.png" id="16_5kpuk"]
+[ext_resource type="Texture2D" uid="uid://c7r7db5guxcwq" path="res://addons/Tiny Swords/Factions/Goblins/Troops/TNT/Red/TNT_Red.png" id="17_3w3q8"]
+[ext_resource type="Texture2D" uid="uid://dh0siu6nucwu4" path="res://addons/Tiny Swords/Factions/Goblins/Troops/TNT/Yellow/TNT_Yellow.png" id="18_sxqru"]
+[ext_resource type="Texture2D" uid="uid://bvwf512peyi6v" path="res://addons/Tiny Swords/Factions/Goblins/Troops/TNT/Dynamite/Dynamite.png" id="19_wgqxj"]
+[ext_resource type="Texture2D" uid="uid://c48i7gurjluft" path="res://addons/Tiny Swords/Factions/Goblins/Troops/Torch/Purple/Torch_Purple.png" id="20_x40u4"]
+[ext_resource type="Texture2D" uid="uid://d2sxhw0rqa521" path="res://addons/Tiny Swords/Factions/Goblins/Troops/Torch/Red/Torch_Red.png" id="21_44r6i"]
+[ext_resource type="Texture2D" uid="uid://cf2cc33dc4v5q" path="res://addons/Tiny Swords/Factions/Goblins/Troops/Torch/Yellow/Torch_Yellow.png" id="22_6hwnu"]
+[ext_resource type="Texture2D" uid="uid://cxscokrishmix" path="res://addons/Tiny Swords/Factions/Goblins/Troops/Torch/Blue/Torch_Blue.png" id="23_fhole"]
+[ext_resource type="Texture2D" uid="uid://cnv553j2l1gof" path="res://addons/Tiny Swords/Factions/Knights/Troops/Pawn/Red/Pawn_Red.png" id="24_mupnp"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(3831, 2483)
+
+[node name="Goblins" type="Label" parent="."]
+offset_left = 2.0
+offset_top = -2655.0
+offset_right = 61.0
+offset_bottom = -2632.0
+scale = Vector2(38.6829, 38.6829)
+text = "Goblins"
+
+[node name="Barrels" type="Label" parent="Goblins"]
+layout_mode = 0
+offset_left = 7.44515
+offset_top = 25.1532
+offset_right = 63.4452
+offset_bottom = 48.1532
+scale = Vector2(0.504932, 0.504932)
+text = "Barrels"
+
+[node name="BarrelBlue" type="Sprite2D" parent="Goblins/Barrels"]
+position = Vector2(19.6598, 78.6392)
+scale = Vector2(0.0511974, 0.0511974)
+texture = ExtResource("1_2bbho")
+
+[node name="BarrelPurple" type="Sprite2D" parent="Goblins/Barrels"]
+position = Vector2(19.7622, 41.1627)
+scale = Vector2(0.0511974, 0.0511974)
+texture = ExtResource("2_q04le")
+
+[node name="BarrelRed" type="Sprite2D" parent="Goblins/Barrels"]
+position = Vector2(64.3551, 41.2651)
+scale = Vector2(0.0511974, 0.0511974)
+texture = ExtResource("3_spa7k")
+
+[node name="BarrelYellow" type="Sprite2D" parent="Goblins/Barrels"]
+position = Vector2(64.3551, 78.076)
+scale = Vector2(0.0511974, 0.0511974)
+texture = ExtResource("4_w73ee")
+
+[node name="Globin\'s house" type="Label" parent="Goblins"]
+layout_mode = 0
+offset_left = 7.65196
+offset_top = 88.6955
+offset_right = 121.652
+offset_bottom = 111.696
+scale = Vector2(0.505, 0.505)
+text = "Goblin's house"
+
+[node name="GoblinHouse" type="Sprite2D" parent="Goblins/Globin\'s house"]
+position = Vector2(5.06788, 23.8036)
+scale = Vector2(0.0511905, 0.0511905)
+texture = ExtResource("7_p023i")
+
+[node name="GoblinHouseDestroyed" type="Sprite2D" parent="Goblins/Globin\'s house"]
+position = Vector2(11.4155, 23.3941)
+scale = Vector2(0.0511905, 0.0511905)
+texture = ExtResource("8_ia4e8")
+
+[node name="WoodTowerBlue" type="Sprite2D" parent="Goblins/Globin\'s house"]
+position = Vector2(25.0322, 33.5298)
+scale = Vector2(0.0511905, 0.0511905)
+texture = ExtResource("9_ruxmg")
+
+[node name="WoodTowerDestroyed" type="Sprite2D" parent="Goblins/Globin\'s house"]
+position = Vector2(60.5584, 33.4274)
+scale = Vector2(0.0511905, 0.0511905)
+texture = ExtResource("10_euxdi")
+
+[node name="WoodTowerInConstruction" type="Sprite2D" parent="Goblins/Globin\'s house"]
+position = Vector2(53.4941, 33.4274)
+scale = Vector2(0.0511905, 0.0511905)
+texture = ExtResource("11_a00fk")
+
+[node name="WoodTowerPurple" type="Sprite2D" parent="Goblins/Globin\'s house"]
+position = Vector2(24.9298, 43.256)
+scale = Vector2(0.0511905, 0.0511905)
+texture = ExtResource("12_bo7hl")
+
+[node name="WoodTowerRed" type="Sprite2D" parent="Goblins/Globin\'s house"]
+position = Vector2(24.725, 52.4703)
+scale = Vector2(0.0511905, 0.0511905)
+texture = ExtResource("13_8qk2p")
+
+[node name="WoodTowerYellow" type="Sprite2D" parent="Goblins/Globin\'s house"]
+position = Vector2(24.5715, 61.6846)
+scale = Vector2(0.0511905, 0.0511905)
+texture = ExtResource("14_osq0c")
+
+[node name="TNT and TNT goblins" type="Label" parent="Goblins"]
+layout_mode = 0
+offset_left = 7.85877
+offset_top = 122.638
+offset_right = 166.859
+offset_bottom = 145.638
+scale = Vector2(0.505, 0.48)
+text = "TNT and TNT goblins"
+
+[node name="TntBlue" type="Sprite2D" parent="Goblins/TNT and TNT goblins"]
+position = Vector2(36.8272, 35.0926)
+scale = Vector2(0.057137, 0.0572858)
+texture = ExtResource("15_541j2")
+
+[node name="TntPurple" type="Sprite2D" parent="Goblins/TNT and TNT goblins"]
+position = Vector2(36.713, 66.3134)
+scale = Vector2(0.057137, 0.0572858)
+texture = ExtResource("16_5kpuk")
+
+[node name="TntRed" type="Sprite2D" parent="Goblins/TNT and TNT goblins"]
+position = Vector2(112.42, 35.2645)
+scale = Vector2(0.057137, 0.0572858)
+texture = ExtResource("17_3w3q8")
+
+[node name="TntYellow" type="Sprite2D" parent="Goblins/TNT and TNT goblins"]
+position = Vector2(112.991, 66.1989)
+scale = Vector2(0.057137, 0.0572858)
+texture = ExtResource("18_sxqru")
+
+[node name="Dynamite" type="Sprite2D" parent="Goblins/TNT and TNT goblins"]
+position = Vector2(70.481, 83.5564)
+scale = Vector2(0.057137, 0.0572858)
+texture = ExtResource("19_wgqxj")
+
+[node name="Torch goblins" type="Label" parent="Goblins"]
+layout_mode = 0
+offset_left = 7.85876
+offset_top = 164.129
+offset_right = 111.859
+offset_bottom = 187.129
+scale = Vector2(0.505, 0.505)
+text = "Torch goblins"
+
+[node name="TorchPurple" type="Sprite2D" parent="Goblins/Torch goblins"]
+position = Vector2(34.5024, 95.6239)
+scale = Vector2(0.0511905, 0.0511905)
+texture = ExtResource("20_x40u4")
+
+[node name="TorchRed" type="Sprite2D" parent="Goblins/Torch goblins"]
+position = Vector2(103.558, 47.6072)
+scale = Vector2(0.0511905, 0.0511905)
+texture = ExtResource("21_44r6i")
+
+[node name="TorchYellow" type="Sprite2D" parent="Goblins/Torch goblins"]
+position = Vector2(104.224, 95.4704)
+scale = Vector2(0.0511905, 0.0511905)
+texture = ExtResource("22_6hwnu")
+
+[node name="TorchBlue" type="Sprite2D" parent="Goblins/Torch goblins"]
+position = Vector2(33.7857, 47.6073)
+scale = Vector2(0.0511905, 0.0511905)
+texture = ExtResource("23_fhole")
+
+[node name="Exposion and fire" type="Label" parent="."]
+offset_left = 4785.0
+offset_top = -2650.0
+offset_right = 4924.0
+offset_bottom = -2627.0
+scale = Vector2(38.683, 38.683)
+text = "Explosion and fire"
+
+[node name="Explosions" type="Sprite2D" parent="Exposion and fire"]
+position = Vector2(31.9808, 25.481)
+scale = Vector2(0.0365361, 0.0365361)
+texture = ExtResource("5_j2vxq")
+
+[node name="Fire" type="Sprite2D" parent="Exposion and fire"]
+position = Vector2(17.8779, 30.0114)
+scale = Vector2(0.0365361, 0.0365361)
+texture = ExtResource("6_vqo3e")
+
+[node name="PawnRed" type="Sprite2D" parent="."]
+position = Vector2(5627, 3981)
+texture = ExtResource("24_mupnp")

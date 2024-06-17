@@ -1,0 +1,87 @@
+[gd_scene load_steps=8 format=3 uid="uid://c53xcr5vgxqqu"]
+
+[ext_resource type="Script" path="res://Player/player.gd" id="1_fu2gt"]
+[ext_resource type="Texture2D" uid="uid://dh0ooanefy54w" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_lu0u0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cnpfb"]
+radius = 11.5063
+height = 35.6392
+
+[sub_resource type="Animation" id="Animation_qr5dr"]
+resource_name = "Idle"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2i(0, 0), Vector2i(1, 0), Vector2i(1, 0), Vector2i(2, 0), Vector2i(3, 0), Vector2i(4, 0), Vector2i(5, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_rgf1p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2i(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_j6ohb"]
+resource_name = "run"
+length = 0.6
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1), Vector2i(3, 1), Vector2i(4, 1), Vector2i(5, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dlpxw"]
+_data = {
+"Idle": SubResource("Animation_qr5dr"),
+"RESET": SubResource("Animation_rgf1p"),
+"run": SubResource("Animation_j6ohb")
+}
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_fu2gt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -29)
+texture = ExtResource("1_lu0u0")
+hframes = 6
+vframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -29)
+rotation = -3.14159
+scale = Vector2(1.53127, -1.62742)
+shape = SubResource("CapsuleShape2D_cnpfb")
+debug_color = Color(0, 0.6, 0.701961, 0.145098)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_dlpxw")
+}
+autoplay = "Idle"

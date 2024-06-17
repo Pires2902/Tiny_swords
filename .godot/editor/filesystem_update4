@@ -1,0 +1,13 @@
+res://test_scenes/test_meat.tscn
+res://misc/meat.tscn
+res://test_scenes/test_assets.tscn
+res://ui/gameUi.tscn
+res://ui/gameUi.gd
+res://Player/player.gd
+res://Player/player.tscn
+res://misc/life_regenerator.gd
+res://test_scenes/test_ui.tscn
+res://GameManager.gd
+res://game_manager.gd
+res://Systems/mobspawner.tscn
+res://misc/ritual.tscn
