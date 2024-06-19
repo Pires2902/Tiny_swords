@@ -9,7 +9,7 @@ var meat_counter: int = 0
 
 
 func _ready():
-	#GameManager.player.meat_collected.connect(on_meat_collected)
+	GameManager.player.meat_colected.connect(on_meat_collected)
 	meat_label.text = str(meat_counter)
 
 

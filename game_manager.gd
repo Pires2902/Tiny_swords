@@ -1,4 +1,3 @@
-class_name Manager
 extends Node
 
 var player: Player

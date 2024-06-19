@@ -37,8 +37,7 @@ var current_attack_animation: int = 0
 var hitBox_cooldown: float = 0.0
 var ritual_cooldown: float = 0.0
 
-signal meat_collected(value:int)
-
+signal meat_colected(value:int)
 
 func _ready():
 	GameManager.player = self
@@ -237,7 +236,6 @@ func die():
 	
 	print("Player morreu")
 	queue_free()
-
 
 func heal(amount: int) -> int:
 	health += amount
