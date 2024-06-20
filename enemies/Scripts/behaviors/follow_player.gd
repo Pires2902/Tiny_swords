@@ -16,6 +16,8 @@ func _ready():
 
 
 func _physics_process(delta: float):
+	#Parar com GameOver
+	if GameManager.is_game_over: return
 	#Calcular direção
 	var player_position = GameManager.player_position
 	var diference = player_position - enemy.position

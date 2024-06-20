@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_fu2gt"]
 [ext_resource type="Texture2D" uid="uid://dh0ooanefy54w" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_lu0u0"]
-[ext_resource type="PackedScene" uid="uid://d33ib1rij4f6c" path="res://misc/ritual.tscn" id="2_5hkkt"]
-[ext_resource type="PackedScene" uid="uid://dji6h8ore75nb" path="res://misc/big_skull.tscn" id="2_aypt0"]
+[ext_resource type="PackedScene" uid="uid://d33ib1rij4f6c" path="res://Player/ritual/ritual.tscn" id="2_mysh4"]
+[ext_resource type="PackedScene" uid="uid://dji6h8ore75nb" path="res://misc/skulls/big_skull.tscn" id="3_2oier"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gvjob"]
 
@@ -266,8 +266,8 @@ bg_color = Color(0.47451, 0, 0, 1)
 motion_mode = 1
 script = ExtResource("1_fu2gt")
 ritual_interval = 15.0
-ritual_scene = ExtResource("2_5hkkt")
-death_prefab = ExtResource("2_aypt0")
+ritual_scene = ExtResource("2_mysh4")
+death_prefab = ExtResource("3_2oier")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -29)

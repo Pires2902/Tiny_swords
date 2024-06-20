@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://8c6e514e6pwd"]
 
 [ext_resource type="PackedScene" uid="uid://c53xcr5vgxqqu" path="res://Player/player.tscn" id="1_4j6fw"]
-[ext_resource type="PackedScene" uid="uid://b632prlguf170" path="res://Systems/mobspawner.tscn" id="2_7q4vv"]
-[ext_resource type="PackedScene" uid="uid://cbkff42oba0li" path="res://misc/meat.tscn" id="3_b6rte"]
+[ext_resource type="PackedScene" uid="uid://b632prlguf170" path="res://Systems/mobSpawner/mobspawner.tscn" id="2_7q4vv"]
+[ext_resource type="PackedScene" uid="uid://cbkff42oba0li" path="res://misc/meats/meat.tscn" id="3_b6rte"]
 
 [node name="TestMobSpawner" type="Node2D"]
 

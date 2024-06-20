@@ -17,6 +17,7 @@ extends CharacterBody2D
 @export var max_health: int = 100
 @export var death_prefab: PackedScene
 
+@export var gold: int = 0
 
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -41,6 +42,10 @@ signal meat_colected(value:int)
 
 func _ready():
 	GameManager.player = self
+	meat_colected.connect(func(value: int): 
+		GameManager.meat_counter += 1
+	)
+	GameManager.player_gold = gold
 
 #Processamento p/s (void Update)
 func _process(delta: float):
@@ -64,7 +69,7 @@ func _process(delta: float):
 	#Ritual
 	update_ritual(delta)
 	
-	#Atualizar health_bar
+	# Atualizar health bar
 	health_progress_bar.max_value = max_health
 	health_progress_bar.value = health
 
@@ -150,6 +155,7 @@ func choose_attack_type():
 		current_attack_animation = (current_attack_animation + 1) % attack_animations.size()
 		attack_interval = 0.6
 
+#Processar ritual
 func update_ritual(delta: float):
 	ritual_cooldown -= delta
 	if ritual_cooldown > 0:return
@@ -229,6 +235,7 @@ func damage(amount: int):
 
 #Processar morte
 func die():
+	GameManager.end_game()
 	if death_prefab:
 		var death_object = death_prefab.instantiate()
 		death_object.position = position
@@ -237,6 +244,7 @@ func die():
 	print("Player morreu")
 	queue_free()
 
+#Processar cura
 func heal(amount: int) -> int:
 	health += amount
 	if health > max_health:

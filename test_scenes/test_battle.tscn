@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://b7rcgqneia88r" path="res://enemies/sheep.tscn" id="2_ddatx"]
 [ext_resource type="PackedScene" uid="uid://dvddk0fhs3q7r" path="res://enemies/pawn.tscn" id="2_e6nb2"]
 [ext_resource type="PackedScene" uid="uid://c5si3eh8nvxsi" path="res://enemies/goblin.tscn" id="3_vgbrx"]
-[ext_resource type="PackedScene" uid="uid://cbkff42oba0li" path="res://misc/meat.tscn" id="5_ovb2n"]
+[ext_resource type="PackedScene" uid="uid://cbkff42oba0li" path="res://misc/meats/meat.tscn" id="5_ovb2n"]
 
 [node name="TestBattle" type="Node2D"]
 

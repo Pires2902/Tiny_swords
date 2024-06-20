@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dt3w7iui1g5gk"]
 
-[ext_resource type="Script" path="res://misc/damage_digit.gd" id="1_4xfal"]
+[ext_resource type="Script" path="res://misc/Damage/damage_digit.gd" id="1_xh8yb"]
 
 [sub_resource type="SystemFont" id="SystemFont_hq15u"]
 font_names = PackedStringArray("Nirmala UI")
@@ -112,7 +112,7 @@ _data = {
 }
 
 [node name="DamageDigit" type="Node2D"]
-script = ExtResource("1_4xfal")
+script = ExtResource("1_xh8yb")
 
 [node name="Node2D" type="Node2D" parent="."]
 

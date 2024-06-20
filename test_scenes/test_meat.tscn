@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dj1wmd36xcfto"]
 
 [ext_resource type="PackedScene" uid="uid://c53xcr5vgxqqu" path="res://Player/player.tscn" id="1_d1w3k"]
-[ext_resource type="PackedScene" uid="uid://cbkff42oba0li" path="res://misc/meat.tscn" id="2_jg22r"]
+[ext_resource type="PackedScene" uid="uid://cbkff42oba0li" path="res://misc/meats/meat.tscn" id="2_jg22r"]
 
 [node name="TestMeat" type="Node2D"]
 

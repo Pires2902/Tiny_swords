@@ -14,7 +14,7 @@ var damage_digit_prefab: PackedScene
 @export var drop_chances: Array[float]
 
 func _ready():
-	damage_digit_prefab = preload("res://misc/damage_digit.tscn")
+	damage_digit_prefab = preload("res://misc/Damage/damage_digit.tscn")
 
 func damage(amount: int):
 	health -= amount
@@ -51,6 +51,9 @@ func die():
 	if randf() <= drop_chance:
 		drop_item()
 		
+	#Aumentar contador
+	GameManager.monsters_defeated_counter += 1
+	
 	#Deletar Node
 	queue_free()
 

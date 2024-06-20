@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://cshbk6jnpe67g"]
 
 [ext_resource type="PackedScene" uid="uid://c53xcr5vgxqqu" path="res://Player/player.tscn" id="1_f6qme"]
-[ext_resource type="PackedScene" uid="uid://bte5fuv13g4h0" path="res://ui/gameUi.tscn" id="1_r53xt"]
-[ext_resource type="PackedScene" uid="uid://b632prlguf170" path="res://Systems/mobspawner.tscn" id="4_n80t6"]
-[ext_resource type="PackedScene" uid="uid://cbkff42oba0li" path="res://misc/meat.tscn" id="5_r65u1"]
+[ext_resource type="PackedScene" uid="uid://bte5fuv13g4h0" path="res://ui/gameUI/gameUi.tscn" id="1_r53xt"]
+[ext_resource type="PackedScene" uid="uid://b632prlguf170" path="res://Systems/mobSpawner/mobspawner.tscn" id="4_n80t6"]
+[ext_resource type="PackedScene" uid="uid://cbkff42oba0li" path="res://misc/meats/meat.tscn" id="5_r65u1"]
 
 [node name="TestUi" type="Node2D"]
 

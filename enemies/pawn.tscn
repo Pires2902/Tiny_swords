@@ -1,10 +1,10 @@
 [gd_scene load_steps=14 format=3 uid="uid://dvddk0fhs3q7r"]
 
-[ext_resource type="Script" path="res://enemies/enemy.gd" id="1_5wr8w"]
-[ext_resource type="Script" path="res://enemies/behaviors/follow_player.gd" id="1_ri2vo"]
+[ext_resource type="Script" path="res://enemies/Scripts/enemy.gd" id="1_5wr8w"]
+[ext_resource type="Script" path="res://enemies/Scripts/behaviors/follow_player.gd" id="1_ri2vo"]
 [ext_resource type="Texture2D" uid="uid://cnv553j2l1gof" path="res://addons/Tiny Swords/Factions/Knights/Troops/Pawn/Red/Pawn_Red.png" id="1_rj6sm"]
-[ext_resource type="PackedScene" uid="uid://dmhebpfiqxjt0" path="res://misc/skull.tscn" id="2_gf8s7"]
-[ext_resource type="PackedScene" uid="uid://cbkff42oba0li" path="res://misc/meat.tscn" id="3_vh5g8"]
+[ext_resource type="PackedScene" uid="uid://dmhebpfiqxjt0" path="res://misc/skulls/skull.tscn" id="2_gf8s7"]
+[ext_resource type="PackedScene" uid="uid://cbkff42oba0li" path="res://misc/meats/meat.tscn" id="3_vh5g8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n7m8w"]
 atlas = ExtResource("1_rj6sm")
