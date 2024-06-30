@@ -37,6 +37,7 @@ var attack_animations: Array = ["attack_side_1", "attack_side_2"]
 var current_attack_animation: int = 0
 var hitBox_cooldown: float = 0.0
 var ritual_cooldown: float = 0.0
+var input_interact:bool
 
 signal meat_colected(value:int)
 
@@ -45,12 +46,12 @@ func _ready():
 	meat_colected.connect(func(value: int): 
 		GameManager.meat_counter += 1
 	)
-	GameManager.player_gold = gold
 
 #Processamento p/s (void Update)
 func _process(delta: float):
 	GameManager.player_position = position
-	
+	GameManager.player_gold = gold
+	GameManager.player_interact = input_interact
 	#Ler Input
 	read_Input()
 	
@@ -98,6 +99,9 @@ func read_Input():
 		input_vector.x = 0
 	if abs(input_vector.y) < deadZone:
 		input_vector.y = 0.0
+	
+	#Definir interação
+	input_interact = Input.is_action_just_pressed("interact")
 	
 	#atualizar o is_runing
 	was_runing = is_runing
@@ -165,9 +169,7 @@ func update_ritual(delta: float):
 	var ritual = ritual_scene.instantiate()
 	ritual.damage_amount = ritual_damage
 	add_child(ritual)
-	
-	
-	pass
+
 
 #Contar cooldown do ataque
 func update_attack_cooldown(delta: float):

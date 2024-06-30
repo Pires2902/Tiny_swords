@@ -1,31 +1,39 @@
 extends Node2D
 
-@onready var gold_player = GameManager.player_gold
-
-@export var required_hold_time: float = 2.0
+@export var cooldown: int = 5
+var gold_cooldown: float = 0.0
 var hold_time: float = 0.0
+var is_player_entered: bool = false
 
-var is_player_entered: bool = false 
+@onready var player: Player = null
 
 func _ready():
 	$Area2D.body_entered.connect(on_body_entered)
-
-func _process(delta: float):
-	if is_player_entered == false:return
+	$Area2D.body_exited.connect(on_body_exited)
+	gold_cooldown = cooldown
 	
-	if Input.is_action_pressed("interact"):
-		hold_time += delta
-		if hold_time >= required_hold_time:
+func _process(delta: float):
+	if not is_player_entered or player == null:
+		return
+	
+	gold_cooldown -= delta
+	# Verificar se o jogador está interagindo
+	if GameManager.player_interact:
+		if gold_cooldown <= 0:
 			pickGold()
-			# Reinicia o hold_time
-			hold_time = 0.0
-	else:
-		hold_time = 0.0
+			gold_cooldown = cooldown
 
 func pickGold():
-	gold_player += 2
+	player.gold += 2
+	print("Player gold:", player.gold)
 
 func on_body_entered(body: Node2D):
 	if body.is_in_group("Player"):
-		var player: Player = body
+		player = body
 		is_player_entered = true
+
+func on_body_exited(body: Node2D):
+	if body.is_in_group("Player"):
+		player = null
+		is_player_entered = false
+		hold_time = 0.0

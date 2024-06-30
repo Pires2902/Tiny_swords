@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://beritmd7sw2fk"]
+
+[ext_resource type="PackedScene" uid="uid://bte5fuv13g4h0" path="res://ui/gameUI/gameUi.tscn" id="1_8p2uq"]
+[ext_resource type="PackedScene" uid="uid://ckhq7ehirh4tl" path="res://misc/mines/goldmine.tscn" id="1_ud4qj"]
+[ext_resource type="PackedScene" uid="uid://c53xcr5vgxqqu" path="res://Player/player.tscn" id="2_buvxh"]
+
+[node name="TestGoldMine" type="Node2D"]
+
+[node name="GameUi" parent="." instance=ExtResource("1_8p2uq")]
+
+[node name="GoldMine" parent="." instance=ExtResource("1_ud4qj")]
+position = Vector2(165, 160)
+
+[node name="Player" parent="." instance=ExtResource("2_buvxh")]
+position = Vector2(646, 365)
